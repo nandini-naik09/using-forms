@@ -9,7 +9,8 @@ constructor(){
   super();
   this.state={
     participate:"",
-    roll_no:null
+    roll_no:null,
+    errormessgae:""
 };
 }
 
@@ -17,14 +18,18 @@ changeHandler=(event)=>{
 
   let name=event.target.name;
   let val= event.target.value;
+  let error="";
 
 if(name==="roll_no")
 {
   if(!Number(val))
   {
-    alert("Roll numer must be Number.");
+    error=<strong>Your roll_no must be a Number</strong>
   }
 }
+
+this.setState({errormessgae:error});
+
 
   this.setState({
     [name]:val
@@ -69,7 +74,7 @@ if(this.state.participate)
         <input type='submit' />
 
         <br/> 
-        <h2> Your roll_no is {this.state.roll_no} </h2>
+     {this.state.errormessgae}
       </form>
 
 
