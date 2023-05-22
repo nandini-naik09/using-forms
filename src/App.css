@@ -13,6 +13,33 @@
   }
 }
 
+body
+{
+  background-color: black;
+}
+
+p{
+  color: grey;
+}
+
+
+h5{
+  color: red;
+  font:100
+}
+
+h3{
+  color:black
+}
+
+.outerdiv{
+  border: 2px solid white;
+  margin: 20px 350px 0px 300px;
+  background: white;
+  padding: 10px;
+  height:  450px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

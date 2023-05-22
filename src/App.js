@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {Component} from 'react'
 
@@ -24,7 +23,7 @@ if(name==="roll_no")
 {
   if(!Number(val))
   {
-    error=<strong>Your roll_no must be a Number</strong>
+    error=<h5>Your roll_no must be a Number</h5>
   }
 }
 
@@ -47,16 +46,16 @@ submitHandler=(event)=>{
 let header="";
 if(this.state.participate)
 {
-  header=<h1>Thank you for registration {this.state.participate}</h1>
+  header=<h3>Thank you for registration {this.state.participate}</h3>
 }
 
     return(
-
-      <form onSubmit={this.submitHandler}>
+<div className='outerdiv'>
+      <form className='formcenter'   onSubmit={this.submitHandler}>
         {header}
-        <h1>
+        <h3>
           Welcome {this.state.participate}
-        </h1>
+        </h3>
         <p>Register your name:</p>
 
         <input type='text' 
@@ -76,6 +75,7 @@ if(this.state.participate)
         <br/> 
      {this.state.errormessgae}
       </form>
+      </div>
 
 
     )
