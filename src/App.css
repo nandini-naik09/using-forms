@@ -15,11 +15,12 @@
 
 body
 {
-  background-color: black;
+  background-image: linear-gradient(to left,#0056d6,#0091e3,#00bac8,#9dd9be, #f1f6e5);
+  background-image: radial-gradient(to left,#0056d6,#0091e3,#00bac8,#9dd9be, #f1f6e5);
 }
 
 p{
-  color: grey;
+  color:black;
 }
 
 
@@ -33,33 +34,22 @@ h3{
 }
 
 .outerdiv{
-  border: 2px solid white;
-  margin: 20px 350px 0px 300px;
+  
+  margin: 20px 350px 0px 400px;
   background: white;
   padding: 10px;
   height:  450px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.button-class{
+  background: #5dbd3f;
+  color: #fff;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  &:hover {
+    color: #5dbd3f;
+    background: white;
+   
   }
 }
+
+

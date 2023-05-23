@@ -70,7 +70,7 @@ if(this.state.participate)
         name='roll_no'
         onChange={this.changeHandler}/>
         <br/> <br/>
-        <input type='submit' />
+        <input type='submit' className='button-class' />
 
         <br/> 
      {this.state.errormessgae}
